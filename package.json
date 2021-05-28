@@ -52,7 +52,7 @@
     }
 },
 "lint-staged": {
-    "**/*.{ts,tsx}": [
+    "**/*.{js,tsx}": [
         "yarn lint:stage"
     ]
 }
