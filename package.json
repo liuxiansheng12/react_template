@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:stage": "eslint --ext .ts,.tsx src"
+    "lint:stage": "eslint --ext .ts,.tsx src",
+    "lint-staged": "lint-staged"
   },
   "eslintConfig": {
     "extends": [
@@ -53,7 +54,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint-staged"
     }
   },
   "lint-staged": {
